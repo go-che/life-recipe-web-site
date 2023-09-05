@@ -6,6 +6,16 @@
         font-size: 16px;
         line-height: 1.8;
     }
+    a {
+        text-decoration: none; /* 모든 링크에 밑줄 제거 */
+        color: #272626; /* 기본 링크 색상 */
+    }
+    a:hover {
+        text-decoration: underline; /* 마우스 오버 시에만 밑줄 표시 */
+    }
+    a.selected {
+        text-decoration: underline; /* 선택한 링크에만 밑줄 표시 */
+    }
     table {
         width: 100%;
         border-collapse: collapse;
@@ -30,9 +40,6 @@
     ol li {
         margin-bottom: 10px;
     }
-    .selected {
-    text-decoration: underline;
-}
 </style>
 <title>About site</title>
 <meta charset="utf-8">
@@ -63,7 +70,7 @@
     <h1><a href="index.html"><center>GOCHE</center></a></h1>
     <nav>
      <ul>
-        <li><a href="GOCHE.html" class="selected">About site</a></li>
+        <li><a href="GOCHE.html">About site</a></li>
         <li><a href="d1.html">바른생활 말랑냥</a></li>
         <li><a href="d2.html">그레이한 오춘기</a</li>
         <li><a href="d8.html">힐러 파랑이</a</li>    
